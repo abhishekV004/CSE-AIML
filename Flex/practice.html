@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        border: 2px solid black;
+        display: flex;
+        flex-direction:row;
+        width: 100%;
+        height: 550px;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: yellow;
+        
+    }
+    .box{
+        border: 2px solid red;
+        
+        flex-direction:row;
+        text-align: center;
+        align-content: center;
+        width: 300px;
+        height: 400px;
+        box-shadow: black;
+        background-color: azure;
+        
+       
+    }
+    button{
+        
+    }
+   
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Basic</h1>
+            <br>
+            <p>47/month</p>
+            <br>
+            <p>Feature 1</p>
+            <br>
+            <p>Feature 2</p>
+            <br>
+            <button>Sign Up</button>
+        </div>
+         <div class="box">    <h1>Premium</h1>
+            <br>
+            <p>47/month</p>
+            <br>
+            <p>Feature 4</p>
+            <br>
+            <p>Feature 4</p>
+            <br>
+            <button>Sign Up</button></div>
+           
+       
+      
+        <div class="box">
+         
+            <h1>Basic</h1>
+            <br>
+            <p>47/month</p>
+            <br>
+            <p>Feature 4</p>
+            <br>
+            <p>Feature 4</p>
+            <br>
+            <button>Sign Up</button>
+        </div>
+    </div>
+    
+</body>
+</html>
