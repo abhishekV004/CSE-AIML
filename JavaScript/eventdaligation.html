@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="parent">
+    <button id="btn1">btn1</button>
+    <button id="btn1">btn2</button>
+    <p id="para1">para1</p>
+    <p id="para1">para2</p>
+  </div>
+  <script>
+    
+    // let div  = document.createElement("div");
+    // div.id = "parent"
+    // div.style.backgroundColor = "palegreen";
+    // div.style.width = "200px";
+    // div.style.height = "200px";
+
+    // let button = document.createElement("button");
+    // button.innerText = "Change Text";
+    // button.id = "btn"
+
+    // let para = document.createElement("p");
+    // para.innerText = "Hello World!";
+    // para.id = "para"
+
+    // div.appendChild(button);
+    // div.appendChild(para);
+    // document.body.appendChild(div);
+
+   document.getElementById("parent").addEventListener("click" , function(event){
+    if(event.target.tagName === "BUTTON") {
+      alert(event.target.innerHTML + " was clicked!");
+    }
+    if(event.target.tagName === "p"){
+      event.target.style.color = "blue";
+    }
+   });
+
+    
+  </script>
+</body>
+</html>
